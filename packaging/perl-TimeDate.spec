@@ -1,6 +1,6 @@
 Name:           perl-TimeDate
 Version:        1.20
-Release: 	1
+Release: 	    1
 Summary:        A Perl module for time and date manipulation
 
 Group:          Development/Libraries
@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %{perl_vendorlib}/Date/*
 %{perl_vendorlib}/Time/*
-%doc %{_mandir}/man3/*.3*
+#%doc %{_mandir}/man3/*.3*
 
 
