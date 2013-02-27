@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %{perl_vendorlib}/Date/*
 %{perl_vendorlib}/Time/*
-#%doc %{_mandir}/man3/*.3*
+%doc %{_mandir}/man3/*.3*
 
 
