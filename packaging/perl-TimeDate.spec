@@ -1,12 +1,12 @@
 Name:           perl-TimeDate
 Version:        1.20
-Release: 	    1
+Release: 	1
 Summary:        A Perl module for time and date manipulation
 
 Group:          Development/Libraries
 License:        GPL+ or Artistic
 URL:            http://search.cpan.org/dist/TimeDate/
-Source0:        %{name}-%{version}.tar.gz
+Source0:   http://www.cpan.org/authors/id/G/GB/GBARR/TimeDate-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
@@ -22,7 +22,7 @@ textual representations of points in time.
 
 
 %prep
-%setup
+%setup -q -n TimeDate-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %{perl_vendorlib}/Date/*
 %{perl_vendorlib}/Time/*
-#%doc %{_mandir}/man3/*.3*
+%doc %{_mandir}/man3/*.3*
 
 
